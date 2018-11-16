@@ -1,0 +1,22 @@
+.option
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid lighten($light-blue, 10%)
+}
+
+.option__messgae
+{
+    color :$title-textcolor;
+    word-break: break-all;
+    margin: 0;
+}
+
+@media(max-width : $desktop-breakpoint)
+{
+    .option__messgae
+    {
+        font-size: 13px;
+    }
+}

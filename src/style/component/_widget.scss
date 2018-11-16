@@ -1,0 +1,40 @@
+.widget
+{
+    background-color:  $light-blue;
+    max-width: 100%;
+}
+.widgetcontainer
+{
+    background-color:$blue;
+    display: flex;
+    justify-content:space-between;
+}
+
+.widgetcontainer__title
+{
+    padding: 10px;    
+    color: $title-textcolor;
+    font-size: 25px;
+    font-weight: bold;
+}
+.widgetContainer--body
+{
+    background-color: $light-blue;
+}
+
+.widget__message
+{
+    color: $title-textcolor;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid lighten($light-blue, 10%);
+}
+
+@media(max-width : $desktop-breakpoint)
+{
+     .widgetcontainer__title 
+    {
+        font-size: 14px;
+    }
+}

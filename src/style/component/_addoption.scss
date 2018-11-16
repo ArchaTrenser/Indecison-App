@@ -1,0 +1,39 @@
+.addoption-error
+{
+    color : $title-textcolor;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+.addoption
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.addoption__input
+{
+    background-color: $background;
+    flex-grow: 0.95;
+    border: none;
+    color: $title-textcolor;
+    border-bottom: 1px solid darken($background,10%);
+    padding: 20px;
+    margin: 0 0 15px 0;
+}
+
+@media (min-width : $desktop-breakpoint)
+{
+    .addoption
+    {
+        flex-direction: row;
+    }
+    .addoption__input
+    {
+        margin: 0 15px 0 0;
+    }
+}

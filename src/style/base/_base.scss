@@ -1,0 +1,12 @@
+body{
+
+    font-family: 'Roboto Slab', serif;
+    background-color: $background;
+}
+button{
+    cursor: pointer;
+}
+button:disabled
+{
+    cursor:default;
+}

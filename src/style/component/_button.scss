@@ -1,0 +1,54 @@
+.big-button
+{
+    background-color: $button-color;
+    border : none;
+    border-bottom: 6px solid darken($button-color,10%);
+    width: 100%;
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: $title-textcolor ;
+}
+
+.big-button:disabled
+{
+    opacity: 0.5;
+}
+
+@media(max-width : 560px)
+{
+    .big-button
+    {
+        margin-bottom: 13px;
+        margin-top:13px; 
+    }
+}
+.button
+{
+    background-color: $button-color;
+    border : none;
+    border-bottom: 8px solid darken($button-color,10%);
+    font-size: 20px;
+    padding: 5px;
+    color: $title-textcolor ;
+}
+.button--link
+{
+    background: none;
+    border: none;
+    color:$subtitle-textcolor;
+}
+
+@media(max-width : $desktop-breakpoint)
+{
+    .big-button 
+    {
+        font-size: 15px;
+    }
+    .button
+    {
+        font-size: 15px;
+    }
+}
